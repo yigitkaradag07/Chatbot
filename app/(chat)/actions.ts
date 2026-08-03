@@ -26,7 +26,6 @@ export async function generateTitleFromUserMessage({
 }) {
   const { text } = await generateText({
     instructions: titlePrompt,
-    maxOutputTokens: 30,
     model: getTitleModel(),
     prompt: getTextFromMessage(message),
     maxOutputTokens: 150, 
