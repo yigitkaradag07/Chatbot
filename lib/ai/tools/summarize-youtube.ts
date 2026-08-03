@@ -59,6 +59,7 @@ export const summarizeYouTube = tool({
           },
         ],
         model: google("gemini-3.6-flash"),
+        maxOutputTokens: 1500,
       });
 
       return {
